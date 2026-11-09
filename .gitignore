@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+**/.DS_Store
+
+graphify-out/
+
+# Windows Piper binaries (not needed on macOS)
+piper_windows_amd64/
+piper_windows_amd64.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

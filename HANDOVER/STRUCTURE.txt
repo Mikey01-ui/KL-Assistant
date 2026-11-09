@@ -1,0 +1,53 @@
+Alfred MK I — /Users/milton/kapiteinlabs (tree for agents)
+
+kapiteinlabs/
+├── .env.example
+├── package.json                 npm run dev | build
+├── vite.config.js
+├── index.html
+├── voice_server.py              (legacy, optional)
+├── whisper_bridge.py
+│
+├── electron/
+│   ├── main.js                  ★ IPC
+│   ├── preload.js
+│   ├── sttFilter.js
+│   ├── elevenLabs.js
+│   ├── memoryService.js
+│   ├── macTools.js
+│   ├── taskService.js
+│   ├── musicService.js
+│   ├── googleAuth.js
+│   ├── languageDetect.js
+│   ├── tools/weather.js calendar.js gmail.js
+│   └── workers/statsWorker.js
+│
+├── src/
+│   ├── App.jsx                  ★ TTS + voice
+│   ├── main.jsx
+│   ├── audio/audioBus.js
+│   ├── hooks/useAI.js           ★ brain pipeline
+│   ├── hooks/useVoiceInput.js   ★ mic VAD
+│   ├── hooks/useHudDismiss.js
+│   ├── hooks/useBrowserListen.js
+│   ├── hooks/useOllama.js
+│   ├── components/JarvisHud.jsx ★ HUD
+│   ├── components/*Widget.jsx
+│   ├── components/Settings.jsx MemoryPanel.jsx ArcReactor.jsx
+│   ├── providers/*.js
+│   ├── styles/jarvis-hud.css
+│   └── utils/weatherLocation.js scheduleIntent.js alfredGreeting.js
+│       systemStats.js sttFilter.js hudOverlay.js toolParser.js ...
+│
+├── HANDOVER/
+│   ├── HANDOFF_FOR_AGENT.md     ★ START HERE
+│   ├── STRUCTURE.txt            (this file)
+│   ├── CONTEXT.md
+│   └── files/                   (snapshots, may be stale)
+│
+├── AGENT_CONTEXT.md
+└── README.md
+
+User data (runtime, not in repo):
+~/Library/Application Support/jarvis/jarvis/
+  memory.db, jarvis_chatlog.json, provider_config.json

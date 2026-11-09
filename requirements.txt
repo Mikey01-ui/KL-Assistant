@@ -1,0 +1,13 @@
+# Optional Python deps for local STT (RealtimeSTT / Whisper).
+# Chat + macOS `say` TTS work without these.
+#
+#   brew install portaudio
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+pyaudio>=0.2.14
+soundfile>=0.12.1
+numpy>=1.24.0
+faster-whisper>=1.0.0
+RealtimeSTT>=0.3.0
+torch
